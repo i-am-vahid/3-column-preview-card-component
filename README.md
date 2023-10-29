@@ -6,4 +6,4 @@
 
 
 
-- [GitHub Pages](https://pages.github.com/)🚀
+- [GitHub Pages](https://i-am-vahid.github.io/3-column-preview-card-component/)🚀
