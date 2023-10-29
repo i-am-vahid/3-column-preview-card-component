@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&display=swap');
+:root{
+    --Bright-orange: hsl(31, 77%, 52%);
+    --Dark-cyan: hsl(184, 100%, 22%);
+    --Very-dark-cyan: hsl(179, 100%, 13%);
+    --Transparent-white-paragraphs: hsla(0, 0%, 100%, 0.75);
+    --Very-light-gray-background-headings-buttons: hsl(0, 0%, 95%);
+    --font-Lexend: 'Lexend Deca', sans-serif;
+    --font-Shoulders: 'Big Shoulders Display', cursive;
+}
+
+*{
+    font-size: 15px;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+body{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container{
+    max-width: 900px;
+    display: grid;
+    margin: 50px 20px;
+    grid-template-columns: repeat(3 , 1fr);
+    grid-template-rows: 1fr;
+    border-radius: 10px;
+    overflow: hidden;
+}
+.container div{
+    padding: 60px 40px;
+}
+.container > div:nth-child(1){background-color: var(--Bright-orange);}
+.container > div:nth-child(2){background-color: var(--Dark-cyan);}
+.container > div:nth-child(3){background-color: var(--Very-dark-cyan);}
+.container div h1{
+    font-size: 50px;
+    font-family: var(--font-Shoulders);
+    font-weight: 700;
+    margin: 30px 0;
+    color: var(--Very-light-gray-background-headings-buttons);
+}
+
+
+.container div p{
+    font-family: var(--font-Lexend);
+    color: var(--Transparent-white-paragraphs);
+    line-height: 22px;
+    margin-bottom: 80px;
+}
+.container div button{
+    border: 2px solid transparent;
+    outline: none;
+    padding:12px 25px;
+    border-radius: 30px;
+    transition: all 1s;
+    cursor: pointer;
+}
+.container > div:nth-child(1) button{color: var(--Bright-orange);}
+.container > div:nth-child(2) button{color: var(--Dark-cyan);}
+.container > div:nth-child(3) button{color: var(--Very-dark-cyan);}
+.container > div:nth-child(1) button:hover{
+    border: 2px solid var(--Very-light-gray-background-headings-buttons);
+    background-color: transparent;
+    color: white;
+}
+.container > div:nth-child(2) button:hover{
+    border: 2px solid var(--Very-light-gray-background-headings-buttons);
+    background-color: transparent;
+    color: white;
+}
+.container > div:nth-child(3) button:hover{
+    border: 2px solid var(--Very-light-gray-background-headings-buttons);
+    background-color: transparent;
+    color: white;
+}
+
+.attribution{
+    position: fixed;
+    bottom: 0;
+
+}
+.attribution a, .attribution a:active ,a:visited{
+    color: var(--Dark-cyan);
+    font-family: var(--font-Lexend);
+}
+
+
+@media (max-width:615px) {
+    body{
+        height: auto;
+        padding: 20px 0;
+    }
+    .container {
+        width: 90%;
+        height: 100%;
+        grid-template-rows: repeat(3 , 1fr);
+        grid-template-columns: 1fr;
+    }
+    .attribution{
+        display: none;
+    }
+}
