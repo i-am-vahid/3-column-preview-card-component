@@ -24,6 +24,7 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
+    background-color: var(--Very-light-gray-background-headings-buttons);
 }
 .container{
     max-width: 900px;
